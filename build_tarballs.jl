@@ -32,6 +32,8 @@ else
   make install;
   rm $WORKSPACE/destdir/bin/libflint-13.dll
   rm $WORKSPACE/destdir/bin/libflint.dll
+  cd $prefix/lib
+  mv libantic.so libantic.dll
 fi
 
 """
