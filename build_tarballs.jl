@@ -30,6 +30,7 @@ else
   #cp -n $prefix/bin/libflint-13.dll $prefix/bin/libflint.dll $prefix/lib/;
   make -j${nproc};
   make install;
+  rm $WORKSPACE/destdir/bin/libflint-13.dll
 fi
 
 """
