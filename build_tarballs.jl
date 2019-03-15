@@ -31,6 +31,7 @@ else
   make -j${nproc};
   make install;
   rm $WORKSPACE/destdir/bin/libflint-13.dll
+  rm $WORKSPACE/destdir/bin/libflint.dll
 fi
 
 """
