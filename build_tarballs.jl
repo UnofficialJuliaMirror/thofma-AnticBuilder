@@ -25,7 +25,9 @@ else
   cd $WORKSPACE/srcdir;
   cd antic/;
   ./configure --prefix=$prefix --disable-static --enable-shared --with-gmp=$prefix --with-mpfr=$prefix --with-flint=$prefix;
-  cp -n $prefix/bin/libflint-13.dll $prefix/bin/libflint.dll $prefix/lib/;
+  if [ ! -f $prefx/lib/libflint-13.dll ]; then cp $prefix/bin/libflint-13.dll $prefix/lib/; fi
+  if [ ! -f $prefx/lib/libflint.dll ]; then cp $prefix/bin/libflint.dll $prefix/lib/; fi
+  #cp -n $prefix/bin/libflint-13.dll $prefix/bin/libflint.dll $prefix/lib/;
   make -j${nproc};
   make install;
 fi
