@@ -3,7 +3,7 @@
 using BinaryBuilder
 
 name = "libantic"
-version = v"0.0.1"
+version = v"0.0.0-6f99431e87a60f215f8b450abc7da96a373094c2"
 
 # Collection of sources required to build libantic
 sources = [
@@ -55,7 +55,7 @@ products(prefix) = [
 dependencies = [
     "https://github.com/JuliaMath/GMPBuilder/releases/download/v6.1.2-2/build_GMP.v6.1.2.jl",
     "https://github.com/JuliaMath/MPFRBuilder/releases/download/v4.0.1-3/build_MPFR.v4.0.1.jl",
-    "https://github.com/thofma/Flint2Builder/releases/download/2b8f8acb/build_libflint.v2.0.0-b8f8acb317c265db99f828e7baf3266f07f92a7.jl"
+    "https://github.com/thofma/Flint2Builder/releases/download/ecbcda/build_libflint.v0.0.0-ecbcda9cdb871efa3833232e4b274e30fda372d8.jl"
 ]
 
 # Build the tarballs, and possibly a `build.jl` as well.
