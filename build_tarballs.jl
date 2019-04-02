@@ -3,12 +3,12 @@
 using BinaryBuilder
 
 name = "libantic"
-version = v"0.0.0-6f99431e87a60f215f8b450abc7da96a373094c2"
+version = v"0.0.0-1a3b3f2c8c498e5f9c2979b201fa4a1c99311543"
 
 # Collection of sources required to build libantic
 sources = [
     "https://github.com/wbhart/antic.git" =>
-    "6f99431e87a60f215f8b450abc7da96a373094c2",
+    "1a3b3f2c8c498e5f9c2979b201fa4a1c99311543",
 
 ]
 
